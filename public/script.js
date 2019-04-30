@@ -185,7 +185,7 @@ function putPost(data) {
 }
 
 function displayResult(data) {
-	$(".posts-list").append(`	<li>
+	$(".posts-list").append(`	
 									<div>
 										ID : ${data.post.id}
 									</div>
@@ -201,7 +201,7 @@ function displayResult(data) {
 									<div>
 										Publish Date : ${data.post.publishDate}
 									</div>
-								</li>`);
+								`);
 }
 
 $("#submitDeletePost").on("click", function (event) {
