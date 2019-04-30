@@ -17,3 +17,12 @@ fieldset{
 div {
 	margin: 5px;
 }
+
+.instructions {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+legend {
+	font-style: italic;
+}

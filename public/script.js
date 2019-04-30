@@ -30,6 +30,9 @@ function getPosts(author_name) {
 				throw new Error(response.statusText);
 			})
 			.then(responseJSON => {
+				$(".posts-list").append(`<div class = "instructions">
+											${author_name}'s posts:
+										</div>`);
 				displayResults(responseJSON);
 			});
 	}
@@ -51,6 +54,9 @@ function getPosts(author_name) {
 				throw new Error(response.statusText);
 			})
 			.then(responseJSON => {
+				$(".posts-list").append(`<div class = "instructions">
+											All posts:
+										</div>`);
 				displayResults(responseJSON);
 			});
 	}
@@ -119,6 +125,9 @@ function postPost(data) {
 			throw new Error(response.statusText);
 		}).then(responseJSON => {
 			console.log(responseJSON);
+			$(".posts-list").append(`<div class = "instructions">
+											Added post:
+										</div>`);
 			displayResult(responseJSON);
 		});
 }
@@ -167,6 +176,9 @@ function putPost(data) {
 		})
 		.then(responseJSON => {
 			console.log(responseJSON);
+			$(".posts-list").append(`<div class = "instructions">
+											Edited post:
+										</div>`);
 			displayResult(responseJSON);
 		});
 
