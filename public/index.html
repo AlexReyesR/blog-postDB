@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<html>
+	<head>
+		<title>
+			< LIST OF POSTS >
+		</title>
+		<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1> List of Posts</h1>
+
+		<form id = "formShowPosts" class = "formSection">
+			<fieldset>
+				<legend>
+					Show all posts, or filtered posts
+				</legend>
+				<div class = "instructions">
+					If you desire to filter by author, enter the name. If not, leave the space empty
+				</div>
+				<label for ="authorInput">
+					<div class = "author">
+						Enter the author name:
+						<input type = "text" id = "authorInputShow" class = "formElement"/>
+					</div>
+				</label>
+				<div>
+					<label for = "submitShowPosts">
+						<input type = "submit" value = "Show/filter" id = "submitShowPosts" class = "button"/>
+					</label>
+				</div>
+			</fieldset>
+		</form>
+
+		<form id = "formNewPost" class = "formSection">
+			<fieldset>
+				<legend>
+					Upload a new post
+				</legend>
+				<label for = "titleInput">
+					<div class = "title">
+						Enter the title:
+						<input type="text" id = "titleInputNew" class = "formElement"/>
+					</div>
+				</label>
+				<label for = "contentInput">
+					<div class = "content">
+						Enter the content of the post:
+						<input type = "text" id = "contentInputNew" class = "formElement" />
+					</div>
+				</label>
+				<label for ="authorInput">
+					<div class = "author">
+						Enter the author name:
+						<input type = "text" id = "authorInputNew" class = "formElement" />
+					</div>
+				</label>
+				<label for = "publishDateInput">
+					<div class = "publishDate">
+						Enter the publish date in the format YYYY MM DD
+						<input type = "text" id = "publishDateInputNew" class = "formElement" />
+					</div>
+				</label>
+				<div>
+					<label for = "submitNewPost">
+						<input type = "submit" value = "Create" id = "submitNewPost" class = "button"/>
+					</label>
+				</div>
+			</fieldset>
+		</form>
+
+		<form id = "formEditPost" class = "formSection"> 
+			<fieldset>
+				<legend>
+					Edit a Post
+				</legend>
+				<label for = "idInput">
+					<div class = "id">
+						Enter an ID
+						<input type = "text" id = "idInputEdit" class = "formElement"/>
+					</div>
+				</label>
+				<div class = "instructions">
+					Enter the value/s to modify
+				</div>
+				<label for = "titleInput">
+					<div class = "title">
+						Enter the title:
+						<input type="text" id = "titleInputEdit" class = "formElement"/>
+					</div>
+				</label>
+				<label for = "contentInput">
+					<div class = "content">
+						Enter the content of the post:
+						<input type = "text" id = "contentInputEdit" class = "formElement" />
+					</div>
+				</label>
+				<label for ="authorInput">
+					<div class = "author">
+						Enter the author name:
+						<input type = "text" id = "authorInputEdit" class = "formElement" />
+					</div>
+				</label>
+				<label for = "publishDateInput">
+					<div class = "publishDate">
+						Enter the publish date in the format YYYY MM DD
+						<input type = "text" id = "publishDateInputEdit" class = "formElement" />
+					</div>
+				</label>
+				<div>
+					<label for = "submitEditPost">
+						<input type = "submit" value = "Modify" id = "submitEditPost" class = "button"/>
+					</label>
+				</div>
+			</fieldset>
+		</form>
+
+		<form id = "formDeletePost" class = "formSection">
+			<fieldset>
+				<legend>
+					Delete a sport
+				</legend>
+				<label for = "idInput">
+					<div>
+						Enter the ID of the post to delete
+						<input type = "text" id = "idInputDelete" class = "formElement" />
+					</div>
+				</label>
+				<label for = "idInputCorroboration">
+					<div>
+						Enter the ID one more time
+						<input type = "text" id = "idInputCorroborationDelete" class = "formElement" />
+					</div>
+				</label>
+				<div>
+					<label for = "submitDeletePost">
+						<input type = "submit" value = "Delete" id = "submitDeletePost" class = "button"/>
+					</label>
+				</div>
+			</fieldset>
+		</form>
+		<ul>
+			<div class = "posts-list">
+				
+			</div>
+		</ul>
+		<script type="text/javascript" src="./script.js"></script>
+	</body>
+</html>
